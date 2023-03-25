@@ -119,6 +119,15 @@ _G.packer_plugins = {
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["lazygit.nvim"] = {
+    commands = { "LazyGit" },
+    keys = { { "", "<Plug>(lazygit.nvim)" } },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/hanwei/.local/share/nvim/site/pack/packer/opt/lazygit.nvim",
+    url = "https://github.com/oncomouse/lazygit.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -207,6 +216,23 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.api.nvim_create_user_command, 'LazyGit', function(cmdargs)
+          require('packer.load')({'lazygit.nvim'}, { cmd = 'LazyGit', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'lazygit.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('LazyGit ', 'cmdline')
+      end})
+time([[Defining lazy-load commands]], false)
+
+-- Keymap lazy-loads
+time([[Defining lazy-load keymaps]], true)
+vim.cmd [[noremap <silent> <Plug>(lazygit.nvim) <cmd>lua require("packer.load")({'lazygit.nvim'}, { keys = "<lt>Plug>(lazygit.nvim)", prefix = "" }, _G.packer_plugins)<cr>]]
+time([[Defining lazy-load keymaps]], false)
+
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

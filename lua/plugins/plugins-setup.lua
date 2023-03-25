@@ -70,6 +70,11 @@ return require('packer').startup(function(use)
   use "gen740/SmoothCursor.nvim"
   use 'karb94/neoscroll.nvim'
   use { 'echasnovski/mini.map', branch = 'stable' }
+  use({
+    "oncomouse/lazygit.nvim",
+    cmd = "LazyGit",
+    keys = { "<Plug>(lazygit.nvim)" },
+  })
 
   if packer_bootstrap then
     require('packer').sync()
