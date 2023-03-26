@@ -22,6 +22,15 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 -- 切换buffer
-keymap.set("n", "<C-L>", ":bnext<CR>")
-keymap.set("n", "<C-R>", ":bprevious<CR>")
-
+keymap.set("n", "<leader>r", ":bnext<CR>")
+keymap.set("n", "<leader>h", ":bprevious<CR>")
+keymap.set("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>")
+keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>")
+keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>")
+keymap.set("n", "<leader>4", ":BufferLineGoToBuffer 4<CR>")
+keymap.set("n", "<leader>5", ":BufferLineGoToBuffer 5<CR>")
+keymap.set("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>")
+keymap.set("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>")
+keymap.set("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>")
+keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>")
+keymap.set("n", "<leader>$", ":BufferLineGoToBuffer -1<CR>")
