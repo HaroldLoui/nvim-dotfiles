@@ -75,6 +75,8 @@ return require('packer').startup(function(use)
     cmd = "LazyGit",
     keys = { "<Plug>(lazygit.nvim)" },
   })
+  use "nathom/filetype.nvim"
+  use 'ethanholz/nvim-lastplace'
 
   if packer_bootstrap then
     require('packer').sync()

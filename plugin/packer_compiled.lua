@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["filetype.nvim"] = {
+    loaded = true,
+    path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/filetype.nvim",
+    url = "https://github.com/nathom/filetype.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -162,6 +167,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lastplace"] = {
+    loaded = true,
+    path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/nvim-lastplace",
+    url = "https://github.com/ethanholz/nvim-lastplace"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
