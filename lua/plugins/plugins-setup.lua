@@ -77,6 +77,11 @@ return require('packer').startup(function(use)
   })
   use "nathom/filetype.nvim"
   use 'ethanholz/nvim-lastplace'
+  use {
+    -- "startup-nvim/startup.nvim",
+    "HaroldLoui/startup.nvim",
+    requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+  }
 
   if packer_bootstrap then
     require('packer').sync()

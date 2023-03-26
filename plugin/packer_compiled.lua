@@ -208,6 +208,11 @@ _G.packer_plugins = {
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["startup.nvim"] = {
+    loaded = true,
+    path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/startup.nvim",
+    url = "https://github.com/HaroldLoui/startup.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/telescope.nvim",
