@@ -34,3 +34,6 @@ keymap.set("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>")
 keymap.set("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>")
 keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>")
 keymap.set("n", "<leader>$", ":BufferLineGoToBuffer -1<CR>")
+
+-- outline
+keymap.set("n", "<leader>o", ":SymbolsOutline<CR>")

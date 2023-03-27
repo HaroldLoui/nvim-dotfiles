@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/SmoothCursor.nvim",
     url = "https://github.com/gen740/SmoothCursor.nvim"
   },
+  ["barbecue.nvim"] = {
+    loaded = true,
+    path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
+    url = "https://github.com/utilyre/barbecue.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -178,6 +183,11 @@ _G.packer_plugins = {
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
@@ -212,6 +222,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/startup.nvim",
     url = "https://github.com/HaroldLoui/startup.nvim"
+  },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
