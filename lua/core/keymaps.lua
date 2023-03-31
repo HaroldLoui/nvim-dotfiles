@@ -21,9 +21,10 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- ----------- 插件 ---------------
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+
 -- 切换buffer
-keymap.set("n", "<leader>r", ":bnext<CR>")
-keymap.set("n", "<leader>h", ":bprevious<CR>")
+keymap.set("n", "<A-l>", ":bnext<CR>")
+keymap.set("n", "<A-h>", ":bprevious<CR>")
 keymap.set("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>")
 keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>")
 keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>")
@@ -37,3 +38,6 @@ keymap.set("n", "<leader>$", ":BufferLineGoToBuffer -1<CR>")
 
 -- outline
 keymap.set("n", "<leader>o", ":SymbolsOutline<CR>")
+
+-- file-browser
+keymap.set("n", "<leader>fb", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")

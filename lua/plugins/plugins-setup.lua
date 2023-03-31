@@ -95,6 +95,10 @@ return require('packer').startup(function(use)
     --   require("barbecue").setup()
     -- end,
   })
+  use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  }
 
   if packer_bootstrap then
     require('packer').sync()
