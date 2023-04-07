@@ -6,13 +6,15 @@ wilder.set_option('pipeline', {
     wilder.python_file_finder_pipeline({
       file_command = function(ctx, arg)
         if string.find(arg, '.') ~= nil then
-          return {'fdfind', '-tf', '-H'}
+          return {'fd', '-tf', '-H'}
         else
-          return {'fdfind', '-tf'}
+          return {'fd', '-tf'}
         end
       end,
+      -- file_command = {'find', '.', '-type', 'f', '-printf', '%P\n'}, 
+      -- dir_command = {'find', '.', '-type', 'd', '-printf', '%P\n'},
       dir_command = {'fd', '-td'},
-      filters = {'cpsm_filter'},
+      filters = {'fuzzy_filter', 'difflib_sorter'},
     }),
     wilder.substitute_pipeline({
       pipeline = wilder.python_search_pipeline({
@@ -59,6 +61,9 @@ local popupmenu_renderer = wilder.popupmenu_renderer(
     right = {
       ' ',
       wilder.popupmenu_scrollbar(),
+    },
+    highlights = {
+      accent = wilder.make_hl('WilderAccent', 'Pmenu', {{a = 1}, {a = 1}, {foreground = '#f4468f'}}),
     },
   })
 )

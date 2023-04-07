@@ -100,6 +100,7 @@ return require('packer').startup(function(use)
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
   use 'gelguy/wilder.nvim'
+  use 'romgrk/fzy-lua-native'
 
   if packer_bootstrap then
     require('packer').sync()

@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["fzy-lua-native"] = {
+    loaded = true,
+    path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/fzy-lua-native",
+    url = "https://github.com/romgrk/fzy-lua-native"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/hanwei/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
